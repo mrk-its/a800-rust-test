@@ -1,0 +1,6 @@
+[build]
+target = "mos-unknown-none"
+
+[unstable]
+build-std = ["core"]
+
