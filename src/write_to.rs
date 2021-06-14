@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 use core::cmp::min;
 use core::fmt;
 
