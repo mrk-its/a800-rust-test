@@ -48,6 +48,9 @@ pub extern "C" fn size() -> u16 {
 #[start]
 fn main(_argc: isize, _args: *const *const u8) -> isize {
   println!("Hello from Rust! {} {:?}", "foo", 42u8);
-  println!("foo {} 12! is {} ({})", "bar", factorial(12), factorial2(12));
+  let f1 = factorial(20);
+  let f2 = factorial2(20);
+  assert!(f1 == f2);
+  println!("foo {} 20! is {}", "bar", f1);
   loop {}
 }
